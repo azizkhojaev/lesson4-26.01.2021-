@@ -116,7 +116,7 @@ namespace Lesson4
             var DZ1 = new Homework1();
             var DZ2 = new Homework2(); 
 
-            DZ1.Task3();
+            DZ1.Task2();
 
             //DZ2.Task2(); 
             
@@ -188,7 +188,10 @@ namespace Lesson4
 
         public void NameShow()
         {
-            Console.WriteLine("Book name : "+bookname);
+            Console.Write("Book name : ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(bookname);
+            Console.ForegroundColor = ConsoleColor.White;
         }
 
     }
@@ -197,7 +200,10 @@ namespace Lesson4
         public string authorofbook { get; set; }
         public void AuthorShow()
         {
-            Console.WriteLine("Author is : " + authorofbook);
+            Console.Write("Author is : ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(authorofbook);
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
     class Content
@@ -206,7 +212,9 @@ namespace Lesson4
         public void ContentShow()
         {
             Console.WriteLine("Content : ");
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("         "+content);
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
     class Converter
